@@ -2,6 +2,6 @@ RUN sed -i 's|http://deb.debian.org/debian|http://archive.debian.org/debian|g' /
     sed -i '/security.debian.org/d' /etc/apt/sources.list && \
     rm -f /etc/apt/sources.list.d/yarn.list && \
     apt-get update && \
-    apt-get install -y --no-install-recommends ffmpeg aria2 && \
+    apt-get install -y --no-install-recommends ffmpeg aria2 git && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
